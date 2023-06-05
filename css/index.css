@@ -1,0 +1,166 @@
+html {
+    font-size: 20px;
+}
+
+body {
+    background-color: rgba(3, 20, 24)
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh; /* Adjust the height as needed */
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+  
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+  
+.icon {
+    border-radius: 10%; /* Makes the icon round */
+    width: 100px; /* Adjust the width as needed */
+    height: 100px; /* Adjust the height as needed */
+    object-fit: cover; /* Ensures the entire icon is visible within the rounded shape */
+}
+
+.icon:hover {
+    /* Animation */
+    animation: fadeOut 0.55s ease forwards;
+    animation: fadeIn 0.55s ease forwards;
+    /* Changing icon image */
+    content: url("/imgs/itzporium_hover.png")
+}
+
+.icon:not(:hover) .icon {
+    /* Animation */
+    animation: fadeOut 0.55s ease forwards;
+    animation: fadeIn 0.55s ease forwards;
+    /* Changing icon image */
+    content: url("/imgs/itzporium.png")
+}
+
+.welcome-text {
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+    margin-top: 20px;
+}
+
+.welcome-text h1 {
+    font-size: 24px; /* Adjust the font size as needed */
+    font-family: sans-serif;
+    margin-bottom: 10px; /* Adjust the spacing between the headline and paragraph as needed */
+}
+
+
+.welcome-text p {
+    font-size: 18px; /* Adjust the font size as needed */
+}
+
+#welcome-typing {
+    display: inline-block;
+    animation: typing 3s infinite;
+}
+
+.infomation-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.icon_discord {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.discord-button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    background-color: #0a0a0a;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    width: 250px;
+    transition: background-color 0.3s ease;
+}
+
+.discord-button:hover {
+    background-color: #0099ff;
+}
+
+.copied-text {
+    display: none;
+}
+
+#copyMessage {
+    display: none;
+    color: #00ffcc;
+    font-weight: bold;
+}
+
+.icon_github {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.github-button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    background-color: #0a0a0a;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    width: 250px;
+    transition: background-color 0.3s ease;
+}
+
+.github-button:hover {
+    background-color: #0099ff;
+}
+
+.icon_namemc {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.namemc-button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    background-color: #0a0a0a;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    width: 250px;
+    transition: background-color 0.3s ease;
+}
+
+.namemc-button:hover {
+    background-color: #0099ff;
+}

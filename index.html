@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="css/index.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="Itzporium" content="Itzporium">
+        <meta name="Description" content="Developer!">
+
+        <title>Itzporium</title>
+        <link rel="icon" href="imgs/itzporium.webp" type="image/webp">
+
+        <style>
+            html {
+                font-size: 20px;
+            }
+
+            body {
+                background-color: rgba(3, 20, 24)
+            }
+        </style>
+    </head>
+    <body>
+        <link rel="icon" href="imgs/itzporium.webp" type="image/webp">
+
+        <div class="container">
+            <img src="imgs/itzporium.webp" alt="Icon" class="icon">
+            <div class="welcome-text">
+                <h1>Hello!</h1>
+                <p>My name's <span id="welcome-typing"></span></p>
+            </div>
+            <script src="js/typing.js"></script>
+
+            <button class="discord-button" onclick="copyToClipboard(this)">
+                <img src="imgs/discord.ico" alt="Icon" class="icon_discord">
+                <span class="discord-text">Itzporium#9655</span>
+                <span class="copied-text">copied.</span>
+            </button>
+            <script src="js/copy-discord.js"></script>
+
+            <button class="github-button" onclick="directTo(`https://github.com/codernocook`)">
+                <img src="imgs/github-mark-white.png" alt="Icon" class="icon_github">
+                <span class="github-text">codernocook</span>
+            </button>
+
+            <button class="namemc-button" onclick="directTo(`https://namemc.com/profile/Itzporium.1`)">
+                <img src="imgs/namemc.jpg" alt="Icon" class="icon_namemc">
+                <span class="namemc-text">Itzporium</span>
+            </button>
+            <script src="js/direct.js"></script>
+        </div>
+    </body>
+</html>
