@@ -11,7 +11,7 @@ function typeWord() {
         return;
     }
 
-    setTimeout(typeWord, 100);
+    setTimeout(typeWord, 45);
 }
 
-const typingTimeout = setTimeout(typeWord, 100);
+const typingTimeout = setTimeout(typeWord, 45);

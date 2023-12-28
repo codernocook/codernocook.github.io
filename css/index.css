@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background-color: rgba(3, 20, 24)
+    background-color: rgba(0, 0, 0)
 }
 
 .container {
@@ -163,4 +163,47 @@ body {
 
 .namemc-button:hover {
     background-color: #0099ff;
+}
+
+.icon_roblox {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.roblox-button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    background-color: #0a0a0a;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    width: 250px;
+    transition: background-color 0.3s ease;
+}
+
+.roblox-button:hover {
+    background-color: #0099ff;
+}
+
+.github-button-bar {
+    float: right;
+    background-color: #000000;
+    border: 0px;
+    border-radius: 50px;
+}
+
+.icon_github-bar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.icon_github-bar:hover {
+    content: url("/imgs/github-mark-white.png")
 }
